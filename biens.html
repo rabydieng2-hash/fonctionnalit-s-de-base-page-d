@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biens disponibles | Teranga Immo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">T</span><span>Teranga Immo</span></a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="biens.html">Biens</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">Catalogue</p>
+      <h1>Biens disponibles</h1>
+      <p>Recherchez par type de bien et par zone pour trouver rapidement une opportunité adaptée à votre projet.</p>
+    </section>
+
+    <section class="search-band">
+      <div class="section-inner">
+        <form class="property-search" id="listingSearch">
+          <label>
+            Type de bien
+            <select name="type">
+              <option value="">Tous les types</option>
+              <option value="Terrain">Terrain</option>
+              <option value="Maison">Maison</option>
+              <option value="Appartement">Appartement</option>
+            </select>
+          </label>
+          <label>
+            Zone
+            <input name="zone" type="search" placeholder="Ex : Dakar, Saly, Thiès">
+          </label>
+          <button class="button button-primary" type="submit">Filtrer</button>
+          <button class="button button-ghost" type="reset">Réinitialiser</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="results-line" id="resultsLine"></div>
+      <div class="property-grid" id="allProperties"></div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/15077190505?text=Bonjour%20Teranga%20Immo%2C%20je%20souhaite%20des%20informations%20sur%20un%20bien." target="_blank" rel="noopener" aria-label="Contacter Teranga Immo sur WhatsApp">WA</a>
+
+  <footer class="site-footer">
+    <p>© 2026 Teranga Immo. Immobilier au Sénégal.</p>
+    <p>Dakar · Saly · Diamniadio · Thiès</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

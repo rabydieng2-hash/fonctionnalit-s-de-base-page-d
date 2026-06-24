@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teranga Immo | Immobilier au Sénégal</title>
+  <meta name="description" content="Teranga Immo accompagne l'achat, la vente et la location de terrains, maisons et appartements au Sénégal.">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Accueil Teranga Immo">
+      <span class="brand-mark">T</span>
+      <span>Teranga Immo</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="biens.html">Biens</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Agence immobilière au Sénégal</p>
+        <h1>Votre prochain bien commence avec une adresse de confiance.</h1>
+        <p>Terrains titrés, villas familiales, appartements modernes et accompagnement local de la première visite jusqu'à la signature.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="biens.html">Voir les biens</a>
+          <a class="button button-light" href="https://wa.me/15077190505?text=Bonjour%20Teranga%20Immo%2C%20je%20souhaite%20avoir%20des%20informations%20sur%20vos%20biens." target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-band" aria-label="Recherche rapide">
+      <div class="section-inner">
+        <form class="property-search" id="homeSearch">
+          <label>
+            Type de bien
+            <select name="type">
+              <option value="">Tous les types</option>
+              <option value="Terrain">Terrain</option>
+              <option value="Maison">Maison</option>
+              <option value="Appartement">Appartement</option>
+            </select>
+          </label>
+          <label>
+            Zone
+            <input name="zone" type="search" placeholder="Dakar, Saly, Diamniadio...">
+          </label>
+          <button class="button button-primary" type="submit">Rechercher</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Sélection</p>
+        <h2>Biens disponibles</h2>
+        <a href="biens.html">Tout voir</a>
+      </div>
+      <div class="property-grid" id="featuredProperties"></div>
+    </section>
+
+    <section class="split-section">
+      <div>
+        <p class="eyebrow">Méthode Teranga</p>
+        <h2>Un accompagnement clair pour investir sereinement.</h2>
+      </div>
+      <div class="feature-list">
+        <article>
+          <h3>Biens vérifiés</h3>
+          <p>Chaque annonce est préparée avec les informations essentielles : prix, localisation, statut et potentiel du bien.</p>
+        </article>
+        <article>
+          <h3>Connaissance du terrain</h3>
+          <p>Nous ciblons les zones à fort intérêt autour de Dakar, Diamniadio, Saly, Thiès et la Petite-Côte.</p>
+        </article>
+        <article>
+          <h3>Contact direct</h3>
+          <p>Le bouton WhatsApp facilite la prise de contact rapide pour demander une visite ou recevoir plus de photos.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/15077190505?text=Bonjour%20Teranga%20Immo%2C%20je%20souhaite%20parler%20avec%20un%20conseiller." target="_blank" rel="noopener" aria-label="Contacter Teranga Immo sur WhatsApp">WA</a>
+
+  <footer class="site-footer">
+    <p>© 2026 Teranga Immo. Immobilier au Sénégal.</p>
+    <p>Dakar · Saly · Diamniadio · Thiès</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
