@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Teranga Immo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">T</span><span>Teranga Immo</span></a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="biens.html">Biens</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-layout">
+      <div class="contact-intro">
+        <p class="eyebrow">Contact</p>
+        <h1>Parlez-nous de votre projet immobilier.</h1>
+        <p>Vous cherchez un terrain, une maison, un appartement ou vous souhaitez confier un bien ? Envoyez votre message et l'équipe Teranga Immo vous répondra rapidement.</p>
+        <div class="contact-details">
+          <p><strong>Téléphone :</strong> +15077190505</p>
+          <p><strong>Email :</strong> contact@terangaimmo.sn</p>
+          <p><strong>Adresse :</strong> Dakar, Sénégal</p>
+        </div>
+        <a class="button button-primary" href="https://wa.me/15077190505?text=Bonjour%20Teranga%20Immo%2C%20je%20souhaite%20vous%20contacter." target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label>
+          Nom complet
+          <input type="text" name="name" required placeholder="Votre nom">
+        </label>
+        <label>
+          Téléphone
+          <input type="tel" name="phone" required placeholder="+1 ...">
+        </label>
+        <label>
+          Type de projet
+          <select name="project">
+            <option>Acheter un bien</option>
+            <option>Louer un bien</option>
+            <option>Vendre un bien</option>
+            <option>Faire estimer un bien</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="6" required placeholder="Décrivez votre besoin"></textarea>
+        </label>
+        <button class="button button-primary" type="submit">Envoyer la demande</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Teranga Immo. Immobilier au Sénégal.</p>
+    <p>Dakar · Saly · Diamniadio · Thiès</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
